@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bitácora de desarrollo | Meteor Icons v4</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 860px;
+      margin: auto;
+      padding: 1.5rem;
+      line-height: 1.6;
+      color: #222;
+      background: #fafafa;
+    }
+
+    header {
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid #ddd;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid #ddd;
+      text-align: center;
+      color: #666;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #1a4f9c;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-block: 2.5rem;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #1c2b49;
+    }
+
+    article {
+      margin-bottom: 1.5rem;
+      padding: 0.8rem;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .meta-chip {
+      display: inline-block;
+      padding: 0.2rem 0.5rem;
+      background: #eee;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      margin: 0.2rem;
+    }
+
+    .callout {
+      padding: 0.8rem;
+      background: #eef6ec;
+      border-left: 4px solid #6b9e4a;
+      margin-top: 1rem;
+    }
+
+    blockquote {
+      margin: 1.5rem 0;
+      padding: 0.5rem 1rem;
+      border-left: 4px solid #1a4f9c;
+      background: #eef2f9;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: #fff;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 0.6rem;
+      text-align: left;
+    }
+
+    th {
+      background: #eef2f9;
+    }
+
+    caption {
+      text-align: left;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    figure {
+      margin: 1.5rem 0;
+    }
+
+    img,
+    video,
+    iframe {
+      max-width: 100%;
+      border-radius: 4px;
+    }
+
+    img,
+    video {
+      height: auto;
+      display: block;
+    }
+
+    iframe {
+      border: 0;
+      display: block;
+      aspect-ratio: 16 / 9;
+    }
+
+    audio {
+      width: 100%;
+      margin-top: 0.5rem;
+    }
+
+    figcaption {
+      font-size: 0.85rem;
+      color: #666;
+      margin-top: 0.3rem;
+    }
+
+    form {
+      display: grid;
+      gap: 0.8rem;
+      max-width: 480px;
+    }
+
+    form div {
+      display: grid;
+      gap: 0.2rem;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      padding: 0.6rem 1.2rem;
+      background: #1c2b49;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: fit-content;
+    }
+
+    button:hover {
+      background: #2a3e66;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <p><strong>Bitácora de desarrollo</strong></p>
+    <h1>Cómo desarrollé Meteor Icons v4</h1>
+    <p>Una experiencia que combina diseño de iconos, edición de SVG y herramientas de JavaScript para crear una
+      biblioteca abierta, consistente y ligera.</p>
+    <nav>
+      <a href="#contexto">Contexto</a>
+      <a href="#desarrollo">Etapas</a>
+      <a href="#aprendizajes">Aprendizajes</a>
+      <a href="#factores">Herramientas</a>
+      <a href="#registros">Registros</a>
+      <a href="#evidencias">Evidencias</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contexto">
+      <h2>1. Contexto de la experiencia</h2>
+      <h3>Qué hice, cuándo y por qué</h3>
+      <p>Desarrollé Meteor Icons v4, una biblioteca de iconos vectoriales SVG pensada para utilizarse en proyectos web.
+        Mi interés no era únicamente reunir una colección de símbolos, sino cuidar tanto su apariencia como el código
+        que los dibuja. En este proyecto trabajé con los trazados SVG a nivel de código y con la integración de los
+        iconos en los paquetes del proyecto.</p>
+      <p>Elegí esta experiencia porque representa un trabajo real de desarrollo que une decisiones visuales y técnicas.
+        Cada icono debe ser reconocible, mantener coherencia con el resto de la colección y evitar datos innecesarios en
+        su trazado, sin cambiar la forma que representa.</p>
+      <p>
+        <span class="meta-chip">Proyecto: Meteor Icons</span>
+        <span class="meta-chip">Versión: serie 4</span>
+        <span class="meta-chip">Tecnologías: SVG y JavaScript</span>
+        <span class="meta-chip">Licencia: MIT</span>
+      </p>
+      <div class="callout">
+        <strong>Fecha aproximada:</strong> corresponde a la etapa de desarrollo de la versión 4 (mediados de 2024),
+        documentada a partir del repositorio y el historial de cambios de la biblioteca.
+      </div>
+    </section>
+
+    <section id="desarrollo">
+      <h2>2. Desarrollo cronológico</h2>
+      <p>Organicé el trabajo en etapas para avanzar desde la definición de los criterios visuales hasta la integración
+        del conjunto. Estos fueron los principales retos técnicos de la experiencia.</p>
+
+      <article>
+        <p><strong>ETAPA 01</strong></p>
+        <h3>Definición de criterios</h3>
+        <p>Primero revisé qué debía compartir la colección: proporciones, grosor de trazo y una apariencia visual
+          coherente. La dificultad fue mantener un estilo uniforme aunque los iconos representaran objetos diferentes.
+          Tomé como criterio evaluar cada símbolo por su lectura visual y no solo por su tamaño de código.</p>
+      </article>
+
+      <article>
+        <p><strong>ETAPA 02</strong></p>
+        <h3>Edición de los trazados SVG</h3>
+        <p>Después trabajé directamente con los datos que describen las formas. Revisé puntos, curvas y segmentos para
+          buscar representaciones más simples sin alterar el dibujo. El reto fue que acortar un trazado no siempre lo
+          mejora: tuve que considerar la forma visible y el código al mismo tiempo.</p>
+      </article>
+
+      <article>
+        <p><strong>ETAPA 03</strong></p>
+        <h3>Integración en el proyecto</h3>
+        <p>Con los iconos preparados, el siguiente paso fue integrarlos en la estructura del proyecto y comprobar cómo
+          se distribuían sus fuentes y paquetes. El repositorio actual documenta fuentes SVG, scripts de generación y
+          paquetes para distintos entornos de JavaScript. Esta separación ayuda a mantener una fuente de datos común.
+        </p>
+      </article>
+
+      <article>
+        <p><strong>ETAPA 04</strong></p>
+        <h3>Revisión y publicación</h3>
+        <p>Por último, revisé el resultado como una biblioteca destinada a otros desarrolladores: los iconos deben ser
+          fáciles de encontrar, incorporar y adaptar a una interfaz. La publicación no termina al dibujar un símbolo;
+          también importa que el código, los ejemplos y la distribución permitan utilizarlo correctamente.</p>
+      </article>
+    </section>
+
+    <section id="aprendizajes">
+      <h2>3. Aprendizajes y mejoras</h2>
+      <h3>Qué aprendí</h3>
+      <p>Aprendí que optimizar SVG no consiste en eliminar caracteres de manera automática. Es necesario entender cómo
+        se construye una figura, comprobar que la geometría siga siendo correcta y valorar la consistencia visual de
+        toda la colección. También confirmé la importancia de separar las fuentes de los artefactos generados para que
+        los cambios puedan propagarse de forma ordenada.</p>
+      <h3>Qué mejoraría si repitiera la actividad</h3>
+      <p>Prepararía desde el comienzo una bitácora por versión con la fecha de cada cambio, el icono revisado, el motivo
+        de la modificación y el resultado de las pruebas visuales. Así podría comparar versiones con datos verificables
+        y mostrar con más precisión cuánto cambió el código y si la apariencia se mantuvo.</p>
+      <blockquote>
+        <p>«Un icono no solo debe verse bien: también merece un código claro y deliberado».</p>
+        <footer>— <cite>Reflexión personal sobre Meteor Icons</cite></footer>
+      </blockquote>
+    </section>
+
+    <section id="factores">
+      <h2>Herramientas y secuencia de trabajo</h2>
+      <h3>Factores que intervinieron</h3>
+      <ul>
+        <li>Archivos SVG individuales como fuente de cada icono.</li>
+        <li>Editor de código para revisar los trazados y los cambios.</li>
+        <li>Git y el repositorio para consultar el historial y organizar versiones.</li>
+        <li>Herramientas de generación y pruebas para integrar las fuentes en los paquetes.</li>
+        <li>Navegador para comprobar la representación visual de los iconos.</li>
+      </ul>
+      <h3>Secuencia de actividades</h3>
+      <ol>
+        <li>Revisar el diseño y los criterios comunes de la colección.</li>
+        <li>Editar los trazados SVG y comparar el resultado visual.</li>
+        <li>Integrar las fuentes en el proceso de generación del proyecto.</li>
+        <li>Verificar la distribución, la documentación y los ejemplos de uso.</li>
+      </ol>
+      <p>En el repositorio de Meteor Icons se documenta que las fuentes SVG alimentan un proceso de generación que
+        produce el paquete principal y los paquetes dirigidos a distintos frameworks.</p>
+      <p>
+        <a href="https://github.com/zkreations/meteor" target="_blank">Repositorio de Meteor Icons</a> |
+        <a href="https://meteoricons.com/" target="_blank">Galería y documentación</a> |
+        <a href="https://www.npmjs.com/package/meteor-icons" target="_blank">Paquete en npm</a>
+      </p>
+    </section>
+
+    <section id="registros">
+      <h2>Registro de observaciones del proyecto</h2>
+      <p>Esta tabla recoge elementos comprobables de la estructura pública del proyecto y el avance de sus componentes.
+      </p>
+      <table>
+        <caption>Elementos revisados al documentar Meteor Icons</caption>
+        <thead>
+          <tr>
+            <th scope="col">Elemento</th>
+            <th scope="col">Observación</th>
+            <th scope="col">Resultado</th>
+            <th scope="col">Estado del registro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fuentes de iconos</td>
+            <td>El repositorio mantiene archivos SVG como fuentes individuales.</td>
+            <td>Permite revisar la geometría de cada icono.</td>
+            <td>Verificado en el repositorio actual</td>
+          </tr>
+          <tr>
+            <td>Generación</td>
+            <td>Hay scripts que leen las fuentes y producen datos y paquetes de salida.</td>
+            <td>Evita mantener manualmente cada salida como una fuente independiente.</td>
+            <td>Verificado en la documentación actual</td>
+          </tr>
+          <tr>
+            <td>Distribución</td>
+            <td>El paquete principal se distribuye como <code>meteor-icons</code> en npm.</td>
+            <td>Los desarrolladores pueden incorporar la biblioteca a sus proyectos.</td>
+            <td>Verificado en npm</td>
+          </tr>
+          <tr>
+            <td>Licencia</td>
+            <td>El repositorio indica licencia MIT.</td>
+            <td>La licencia y sus condiciones quedan disponibles junto al código.</td>
+            <td>Verificado en el repositorio</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="evidencias">
+      <h2>Evidencias visuales y recursos multimedia</h2>
+      <p>A continuación se presentan las evidencias documentales y recursos multimedia del desarrollo del proyecto.</p>
+
+      <figure>
+        <img src="assets/screenshot.png" alt="Captura de pantalla del espacio de trabajo del proyecto" width="600">
+        <figcaption>Figura 1. Captura de pantalla de la pagina de inicio</figcaption>
+      </figure>
+
+      <figure>
+        <img src="assets/screenshot2.png" alt="Captura de pantalla de la verificación y edición de trazados vectoriales" width="600">
+        <figcaption>Figura 2. Captura de pantalla de personalización de iconos</figcaption>
+      </figure>
+
+      <figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1C-0zSB1BCY" title="Demostración en video de la página de inicio" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figcaption>Demostración en video de la página de inicio.</figcaption>
+      </figure>
+
+      <h3>Musica para escuchar :)</h3>
+      <p>Una musica de creacion propia para escuchar mientras se revisa la bitacora.</p>
+      <figure>
+        <audio controls>
+          <source src="assets/snotes.mp3" type="audio/mpeg">
+        </audio>
+        <figcaption>Creado el 10 de octubre de 2019</figcaption>
+      </figure>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Envía tus dudas, sugerencias o comentarios sobre la biblioteca de iconos.</p>
+      <form action="#" method="get">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required>
+        </div>
+        <div>
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" required>
+        </div>
+        <div>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Autoría: Daniel · 2026</p>
+    <p>Bitácora personal elaborada para la práctica de HTML5.</p>
+  </footer>
+
+</body>
+
+</html>
